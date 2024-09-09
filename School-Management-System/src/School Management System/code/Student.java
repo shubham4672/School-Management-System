@@ -1,3 +1,5 @@
+package code;
+
 /****************
  * This class is responsible for keeping track of student's names, id, fees, grade
  * **************/
@@ -23,7 +25,7 @@ public class Student {
         this.student_name=student_name;
         this.gender=gender;
         this.grade=grade;
-        this.amount_paid=70000;
+        this.amount_paid=0;
         this.address=address;
     }
 
@@ -41,8 +43,9 @@ public class Student {
      * Used to update the student's fees.
      * @param amount_paid new fees to be paid
      */
-    public void updateFees(int amount_paid){
-        this.amount_paid=amount_paid;
+    public void payFees(int amount_paid){
+        this.amount_paid+=amount_paid;
+
     }
 
     /**
@@ -51,5 +54,53 @@ public class Student {
      */
     public void updateAddress(String address){
         this.address=address;
+    }
+
+    /**
+     *
+     * @return the university id
+     */
+    public int getUniversity_id() {
+        return university_id;
+    }
+
+    /**
+     *
+     * @return the student name
+     */
+    public String getStudent_name() {
+        return student_name;
+    }
+
+    /**
+     *
+     * @return the student's gender
+     */
+    public String getGender() {
+        return gender;
+    }
+
+    /**
+     *
+     * @return student's grade
+     */
+    public int getGrade() {
+        return grade;
+    }
+
+    /**
+     *
+     * @return amound paid by the student as fees
+     */
+    public int getAmount_paid() {
+        return amount_paid;
+    }
+
+    /**
+     *
+     * @return student's current address
+     */
+    public String getAddress() {
+        return address;
     }
 }

@@ -1,3 +1,5 @@
+package code;
+
 /****************
  * This class is responsible for storing teaching staff's information
  * like teacher's id, name, age, salary, gender, address.
@@ -11,7 +13,7 @@ public class Teacher {
     private String address;
 
     /**
-     * Create new Teacher object via parameterized constructor
+     * Create new code.Teacher object via parameterized constructor
      * @param teacher_id every teacher's unique id
      * @param teacher_name teacher's name
      * @param age teacher's age
@@ -36,21 +38,69 @@ public class Teacher {
     public int getTeacher_id(){
         return teacher_id;
     }
+
+    /**
+     *
+     * @return the name of the teacher.
+     */
     public String getName(){
         return teacher_name;
     }
+
+    /**
+     *
+     * @return the current age of the teacher.
+     */
     public int getAge(){
         return age;
     }
+
+    /**
+     *
+     * @return the current salary of the teacher.
+     */
     public double getSalary(){
         return salary;
     }
+
+    /**
+     *
+     * @return the gender of the teacher.
+     */
     public String getGender(){
         return gender;
     }
+
+    /**
+     *
+     * @return the current address of the teacher.
+     */
     public String getAddress(){
         return address;
     }
 
+    /**
+     *
+     * @param age set the new age
+     */
+    public void setAge(int age){
+        this.age=age;
+    }
+
+    /**
+     *
+     * @param salary set the updated salary of the teacher
+     */
+    public void setSalary(int salary){
+        this.salary=salary;
+    }
+
+    /**
+     *
+     * @param address update the current address of the teacher
+     */
+    public void setAddress(String address){
+        this.address=address;
+    }
 
 }
