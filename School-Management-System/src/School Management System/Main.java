@@ -1,4 +1,7 @@
-package code;
+import code.School;
+import code.Student;
+import code.Teacher;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Main {
